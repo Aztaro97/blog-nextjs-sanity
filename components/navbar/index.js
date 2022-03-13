@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Navbar.module.css";
 
 const NavBar = () => {
@@ -5,28 +6,30 @@ const NavBar = () => {
     <div className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.navbar_logo}>
-          <a href="/">
-            Logo
-            {/* <img src="/images/logo.png" alt="logo" /> */}
-          </a>
+          <Link href="/">
+            <a>
+              Logo
+              {/* <img src="/images/logo.png" alt="logo" /> */}
+            </a>
+          </Link>
         </div>
         <ul className={styles.navbar_menu}>
           <li className={styles.navbar_list}>
-            <a href="/" className={styles.navbar_item}>
-              Home
-            </a>
+            <Link href="/">
+              <a className={styles.navbar_item}>Home</a>
+            </Link>
             <div></div>
           </li>
           <li className={styles.navbar_list}>
-            <a href="/" className={styles.navbar_item}>
-              About
-            </a>
+            <Link href="/">
+              <a className={styles.navbar_item}>About</a>
+            </Link>
             <div></div>
           </li>
           <li className={styles.navbar_list}>
-            <a href="/" className={styles.navbar_item}>
-              Contact
-            </a>
+            <Link href="/">
+              <a className={styles.navbar_item}>Contact</a>
+            </Link>
             <div></div>
           </li>
         </ul>

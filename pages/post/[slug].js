@@ -31,6 +31,7 @@ export default function SinglePost({ post, dataPosts, listCategory }) {
               width={500}
               height={300}
               layout="responsive"
+              alt={post.title}
             />
             <div className={styles.post_body}>
               <div className={styles.post_auth}>
@@ -39,6 +40,8 @@ export default function SinglePost({ post, dataPosts, listCategory }) {
                   width={50}
                   height={50}
                   className={styles.post_auth_img}
+                  layout="responsive"
+                  alt={post.post_auth_name}
                 />
                 <div>
                   <h2 className={styles.post_auth_name}>Moussa </h2>
