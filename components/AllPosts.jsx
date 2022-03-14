@@ -16,7 +16,7 @@ export default function AllPosts({posts}) {
           src={picture}
           alt="Picture"
           width={700}
-          height={300}
+          height={400}
           className={styles.img}
         />
         <div className={styles.content}>
