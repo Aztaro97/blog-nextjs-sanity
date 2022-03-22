@@ -8,6 +8,7 @@ import Layout from "../components/layout";
 const picture = "/assets/picture.png";
 
 export default function Category({ posts }) {
+  console.log(posts);
   return (
     <Layout>
       <div className={styles.container}>
@@ -53,7 +54,7 @@ export const getServerSideProps = async (content) => {
   const res = await client
     .fetch(query)
     .then((resul) => resul)
-    .catch((err) => console.log(err));
+    .catch((err) => console.error(err));
 
   return {
     props: {

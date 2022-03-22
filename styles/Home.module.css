@@ -42,6 +42,9 @@
 
 /* Media Query Tablet  */
 @media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 .5rem;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -50,11 +53,9 @@
   }
 }
 
-
 /* Media Query  Mobile  */
 @media only screen and (max-width: 486px) {
-    
-    .posts_container {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .posts_container {
+    grid-template-columns: repeat(1, 1fr);
   }
+}

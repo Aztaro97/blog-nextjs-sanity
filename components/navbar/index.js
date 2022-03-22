@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../../styles/Navbar.module.css";
 
 const NavBar = () => {
@@ -8,8 +9,11 @@ const NavBar = () => {
         <div className={styles.navbar_logo}>
           <Link href="/">
             <a>
-              Logo
-              {/* <img src="/images/logo.png" alt="logo" /> */}
+              <Image src="/assets/logo.png"
+              // layout="fill"
+              width={30}
+              height={30}
+              alt="logo" />
             </a>
           </Link>
         </div>
